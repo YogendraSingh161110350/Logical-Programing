@@ -1,0 +1,26 @@
+ctrl + x = cut
+comment = ctrl + /
+remove tab = shift+tab
+selecting particular word =  cntrl+d
+coppy paste bunch = cntrl+shift+d
+moving santence up down = cntrl+shift+up/down arrow
+fast line select= cntrl+shift +right and left arrow
+new file = cntrl+n
+new desktop = cntrl+wind+d
+shwitch of desktop = cntrl+wind+left/right arrow
+remove desktop=cntrl+window+f4
+
+new tab = cntrl+t
+remove tab = cntrl+w
+restore tab = cntrl+shift+t
+history page = cntrl+h
+download = cntrl+j
+chorme development tool= f12
+minimize = win + d
+open expolere = wind +e
+setting = win + i
+notification tab = win+a
+lock screen = win +l
+switch tab = alt+tab
+switch tabs = cntrl + tab
+full screen = f11

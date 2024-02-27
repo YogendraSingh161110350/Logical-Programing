@@ -1,0 +1,358 @@
+package Alphabate.logical;
+
+class A{
+public static void main(String args[]){
+int num = 11;
+for(int i=1;i<=num;i++){
+	for(int s=1;s<=num-i;s++){
+		System.out.print(" ");
+			}
+	for(int j=1;j<=2*i-1;j++){
+			if(i==num*3/5||j==1||j==2*i-1){
+				System.out.print("*");
+			}else{	
+				System.out.print(" ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+
+
+
+class B{
+public static void main(String args[]){
+int num = 11;
+for(int i = 1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num||i==num/2+1||j==1||j==num){
+		System.out.print("* ");}else{
+						System.out.print("  ");
+					}
+			}System.out.println();
+		}
+	}
+
+
+
+class C{
+public static void main(String args[]){
+int num = 13;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num||j==1){
+					System.out.print("* ");
+				}else{
+					System.out.print("  ");
+				}	
+			}System.out.println();	
+		}
+	}
+}
+
+class D{
+public static void main(String args[]){
+int num = 7;
+for(int i=1;i<=num;i++){
+		for(int j=1;j<=num;j++){
+			if(i==1||i==num||j==1||j==num){
+				System.out.print("* ");}else{
+                   System.out.print("  ");
+				}
+			}	System.out.println();
+		}
+	}
+}
+
+
+
+
+
+class E{
+public static void main(String args[]){
+int num =11;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num||j==1){
+					System.out.print("* ");
+				}
+			if(i==num/2+1){
+					System.out.print("* ");
+						if(j==num-num/2){
+					          break;			
+					}
+				}
+			}System.out.println();
+		}
+	}
+
+
+class F{
+public static void main(String args[]){
+int num =25;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||j==1){
+					System.out.print("* ");
+				}
+			if(i==num/2+1){
+					System.out.print("* ");
+						if(j==num-num/2){
+					          break;			
+					}
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class H{
+public static void main(String args[]){
+int num = 11;
+for(int i=1;i<=num;i++){
+		for(int j=1;j<=num;j++){
+			if(j==1||j==num||i==num/2+1){
+				System.out.print("* ");
+			}else{
+				System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}	
+}
+
+
+class I{
+public static void main(String args[]){
+int num = 11;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num||j==num/2+1){
+			System.out.print("* ");
+				}else{
+			System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class J{
+public static void main(String args[]){
+int num =11;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(j==num/2+1||i==1||(i==num&&j<=num/2+1)||(i>num-num*2/5&&j==1)){
+		System.out.print("* ");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class K{
+public static void main(String args[]){
+int num = 11;
+int sp=num/2;
+int st=1;
+	for(int i=1;i<=num;i++){
+		if(i<=num/2+1){
+			System.out.print("* ");
+			for(int j=1;j<=sp;j++){
+					System.out.print("  ");
+				}
+					System.out.print("* ");
+			sp--;
+			}
+			
+			else{
+				
+				sp++;
+				System.out.print("* ");
+			for(int j=1;j<=sp;j++){
+					System.out.print("  ");
+				}
+					System.out.print("  *");
+						
+			}System.out.println();
+		}
+	}
+}
+
+class L{
+public static void main(String args[]){
+int num = 10;
+for(int i=1;i<=num;i++){
+	if(i<=num-1){
+			System.out.println("*");
+			}else{
+			for(int j=1;j<=num;j++){
+				System.out.print("* ");	
+					}
+			}
+		}
+	}
+}
+
+class N{
+public static void main(String args[]){
+int num=10;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(j==1||j==num||i==j){
+		System.out.print("* ");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+
+
+class O{
+public static void main(String args[]){
+int num =10;
+for(int a=1;a<=num;a++){
+	for(int j=1;j<=num;j++){
+		if(a==1||j==1||a==num||j==num){
+			System.out.print("* ");
+				}else{
+			System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+
+
+
+class P{
+public static void main(String args[]){
+int num=10;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num/2||j==1||(j==num&&i<=num/2)){
+			System.out.print("* ");
+				}else{
+			System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class R{
+public static void main(String args[]){
+int num =11;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||j==1||(i<=num/2+1&&j==num)||i==num/2+1||(i>num/2&&j==i-num/2)){
+		System.out.print("* ");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class S{
+public static void main(String args[]){
+int num=11;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num||(i<=num/2+1 && j==1)||i==num/2+1||(i>num/2+1&&j==num)){
+			System.out.print("* ");
+				}else{
+			System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class T{
+public static void main(String args[]){
+int num =11;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||j==num/2+1){
+		System.out.print("* ");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class U{
+public static void main(String args[]){
+int num = 10;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(j==1||j==num||i==num){
+		System.out.print("* ");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}
+
+class V{
+public static void main(String args[]){
+int num = 10;
+int sp1= 2;
+int st = 1;
+int sp2 = num;
+for(int i=1;i<=num;i++){
+		
+if(i<num){
+	for(int j=1;j<=sp1;j++){
+			System.out.print(" ");
+		}
+	System.out.print("*");
+    for(int j=1;j<=sp2;j++){
+			System.out.print("  ");
+		}
+     System.out.print("*");
+	sp1++;
+	sp2--;
+	}else{
+		for(int j=1;j<=num;j++){
+			System.out.print(" ");
+		}System.out.print("  *");
+			}System.out.println();
+
+		}
+	}
+}
+class X{
+public static void main(String args[]){
+int num=10;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==j||(i+j)==num+1){
+		System.out.print(" *");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+} 
+class Z{
+public static void main(String args[]){
+int num = 10;
+for(int i=1;i<=num;i++){
+	for(int j=1;j<=num;j++){
+		if(i==1||i==num||i+j==num+1){
+		System.out.print("* ");}else{
+		System.out.print("  ");
+				}
+			}System.out.println();
+		}
+	}
+}

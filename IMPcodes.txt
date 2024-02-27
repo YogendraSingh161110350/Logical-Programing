@@ -1,0 +1,173 @@
+class Hello{
+int a;
+int b;
+static int c;
+Hello(){
+System.out.println("defult constructor");
+    }
+Hello(int a1){
+	System.out.println("1 param const");
+	a = a1;
+   }
+Hello(int a1,int b1){
+	System.out.println("2 param const");
+	a = a1;
+     b = b1;
+   }
+Hello(int a1,int b1 ,int c1){
+	System.out.println("3 param const");
+	a = a1;
+	b = b1;
+	c = c1;
+   }
+void m1(){
+	System.out.println("m1() in Hello class");
+	System.out.println(a);
+	System.out.println(b);
+	System.out.println(c);
+	}
+}
+
+class yogi{
+public static void main(String args[]){
+	Hello h1 = new Hello();
+	Hello h2 = new Hello(10);
+	Hello h3 = new Hello(10,20);
+	Hello h4 = new Hello(22,233,56);
+	Hello h5 = new Hello(11,5,8);
+	h1.m1();
+	h2.m1();
+	h3.m1();
+	h4.m1();
+	h5.m1();
+     
+	}
+}
+
+
+// OTP Modules
+
+class Candidate{
+String name;
+String fName;
+int mNumber;
+{
+		System.out.println("***** Student details*****");
+		System.out.println();
+}
+Candidate(String name,String fName,int mNumber){
+			this.name =name;
+			this.fName=fName;
+			this.mNumber=mNumber;
+			OTP();
+			
+	}
+void OTP(){
+			System.out.println("name of candidate:"+name);
+			System.out.println("father name: "+fName);
+			System.out.println("mobile number: "+ mNumber);
+			System.out.println("sending OTP to:- "+ this.mNumber);
+			System.out.println("your otp is: "+ this.hashCode());
+	}
+void Verf_otp(int a){
+		if(this.hashCode()==a){
+			System.out.println("verfication is seccessfull!!!");
+			}else{
+			System.out.println("OTP is not match,wrong OTP!!!");
+			}
+		}
+}
+
+class Yogi{
+public static void  main(String args[]){
+	Candidate c1 = new Candidate("yogendra singh","nandan singh",81930245);
+	c1.Verf_otp(c1.hashCode());
+	Candidate c2 =new Candidate("hina negi","nandan singh",84749257);
+	c2.Verf_otp(1829164700);
+
+	}
+}
+
+
+
+
+
+
+class Hello{
+int a;
+int b;
+static final int c;
+	{
+	System.out.println("IB in Hello class");
+	
+	}
+	static{
+	System.out.println("Sb in Hello class");
+	c = 52;
+	}
+}
+
+class yogi{
+public static void main(String args[]){
+		Hello h1 = new Hello();
+		System.out.println(h1.c);	
+	}
+}
+
+//INHERITANCE 
+class University{
+String name;
+String city;
+int id;{
+System.out.println(" *********************");
+}
+void IdCreate(){
+		System.out.println(" thsnks for registration "+ name);
+		System.out.println("your id is:-"+ this.hashCode());
+	}	
+}
+
+class student extends University{
+	student(String name,String city,int id){
+		this.name=name;
+		this.city=city;
+		this.id=id;
+		IdCreate();
+		}
+}
+
+class admin extends University{
+	admin(String name,String city,int id){
+		this.name=name;
+		this.city=city;
+		this.id=id;
+		IdCreate();
+		}
+}
+
+class account extends University{
+	account(String name,String city,int id){
+		this.name=name;
+		this.city=city;
+		this.id=id;
+		IdCreate();
+		}
+}
+
+class teacher extends University{
+	teacher(String name,String city,int id){
+		this.name=name;
+		this.city=city;
+		this.id=id;
+		IdCreate();
+		}
+
+}
+
+class makeId{
+public static void main(String args[]){
+	student s1=new student("rohit","noida",100);
+	student s2=new student("mohit","delhi",255);
+	account a1 =new account("rohit","g.noida",545);
+	}
+}
